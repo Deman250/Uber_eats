@@ -87,6 +87,7 @@
   .networks__icon {
     display: inline-block;
     box-sizing: border-box;
+    transition: 0.5s;
 
     &:hover,
     &:focus {
@@ -113,6 +114,7 @@
     font-size: $fs-s;
     margin-bottom: 25px;
     box-sizing: border-box;
+    transition: 0.5s;
 
     &:hover,
     &:focus {
@@ -133,6 +135,7 @@
 .app-store,
 .google-play {
   height: 40px;
+  transition: 0.5s;
 
   &:hover,
   &:focus {
@@ -161,6 +164,7 @@
     text-decoration: none;
     color: $c-white;
     font-size: $fs-xs;
+    transition: 0.5s;
 
     &:hover,
     &:focus {
