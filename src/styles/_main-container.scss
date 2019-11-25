@@ -1,0 +1,150 @@
+@import "vars";
+
+.main {
+  margin: 0 auto 30px;
+  padding: 0 80px;
+}
+
+.main-content {
+
+  .main-header {
+    font-size: $fs-xl;
+    font-weight: $fw-m;
+    margin: 0 0 15px;
+  }
+
+  .main-catalog {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-bottom: 80px;
+  }
+}
+
+.card-item {
+  cursor: grab;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 20px;
+  transition: 0.5s;
+
+  &:hover {
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px lighten($c-green, 10%);
+  }
+
+  .card-image {
+    width: 100%;
+  }
+
+  .card-header {
+    font-size: $fs-l;
+    font-weight: $fw-m;
+    margin: 15px 0 5px ;
+  }
+
+  .card-cusine {
+    display: block;
+    font-size: $fs-m;
+    color: #626262;
+    margin-bottom: 5px;
+  }
+
+  .card-delivery-time {
+    font-size: $fs-s;
+  }
+}
+
+.delivery-main {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 40px;
+  position: absolute;
+  visibility: hidden;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+  }
+
+  &__time {
+    height: 40px;
+    width: 45px;
+    padding: 0 15px;
+    border: 1px solid #e0e0e0;
+    font-size: $fs-l;
+    border-radius: 2px;
+    outline-color: $c-green;
+    transition: 0.5s;
+
+    &:hover {
+      outline: none;
+      border-radius: 5px;
+      box-shadow: 0 0 3px 3px lighten($c-green, 10%);
+    }
+  }
+
+  &__span {
+    color: #626262;
+    font-weight: $fw-s;
+    margin-bottom: 10px;
+  }
+
+  &__image-location {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+  }
+
+  &__address {
+    display: inline-block;
+    width: 150px;
+    height: 38px;
+    padding-left: 30px;
+    border: 1px solid #e0e0e0;
+    font-size: $fs-l;
+    outline-color: $c-green;
+    transition: 0.5s;
+
+    &:hover {
+      outline: none;
+      border-radius: 2px;
+      box-shadow: 0 0 3px 3px lighten($c-green, 10%);
+    }
+
+  }
+}
+
+@media (max-width: 1123px) {
+  .main {
+    padding: 0 5px;
+
+    .main-catalog {
+      display: grid;
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .main {
+    padding: 0 5px;
+
+    .main-catalog {
+      display: grid;
+      grid-template-rows: repeat(9, 1fr);
+      grid-template-columns: 1fr;
+    }
+  }
+  .delivery-main {
+    position: relative;
+    visibility: visible;
+  }
+}
