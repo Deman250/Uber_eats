@@ -29,12 +29,9 @@
     border-radius: 2px;
     outline-color: $c-green;
     padding: 0 10px;
-    transition: 0.5s;
+    transition: box-shadow 0.4s;
 
-    &:hover,
-    &:focus {
-      outline: none;
-      border-radius: 5px;
+    &:hover {
       box-shadow: 0 0 3px 3px lighten($c-green, 10%);
     }
   }
@@ -45,27 +42,21 @@
     font-weight: $fw-s;
   }
 
-  .delivery-image-location {
-    position: relative;
-    left: 5px;
-    z-index: 1;
-  }
-
   .delivery-address {
     display: inline-block;
-    position: relative;
-    right: 18px;
-    width: 120px;
+    background-image: url(../images/location.svg);
+    background-repeat: no-repeat;
+    background-position: 7px center;
+    background-size: 20px;
+    max-width: 120px;
     height: 38px;
     border: 1px solid #e0e0e0;
     padding-left: 35px;
     font-size: $fs-l;
-    transition: 0.5s;
+    outline-color: $c-green;
+    transition: box-shadow 0.4s;
 
-    &:focus,
     &:hover {
-      outline: none;
-      border-radius: 2px;
       box-shadow: 0 0 3px 3px lighten($c-green, 10%);
     }
 
@@ -95,8 +86,7 @@
     box-sizing: border-box;
     transition: 0.5s;
 
-    &:hover,
-    &:focus {
+    &:hover {
       outline: none;
       border-radius: 2px;
       box-shadow: 0 0 3px 3px lighten($c-green, 10%);
@@ -116,13 +106,11 @@
 .header-search {
   margin: 0 80px;
 
-  .search-img {
-    position: relative;
-    top: 35px;
-    left: 15px;
-  }
-
   .search-input {
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 22px;
     margin-left: 5px;
     height: 40px;
     padding-left: 40px;
@@ -133,8 +121,7 @@
     outline-color: $c-green;
     transition: 0.5s;
 
-    &:hover,
-    &:focus {
+    &:hover {
       border-radius: 5px;
       box-shadow: 0 0 3px 3px lighten($c-green, 10%);
     }

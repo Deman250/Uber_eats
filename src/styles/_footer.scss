@@ -89,8 +89,7 @@
     box-sizing: border-box;
     transition: 0.5s;
 
-    &:hover,
-    &:focus {
+    &:hover {
       outline: none;
       border-radius: 2px;
       box-shadow: 0 0 0 2px darken($c-green, 5%);
@@ -115,9 +114,9 @@
     margin-bottom: 25px;
     box-sizing: border-box;
     transition: 0.5s;
+    width: max-content;
 
-    &:hover,
-    &:focus {
+    &:hover {
       outline: none;
       border-radius: 5px;
       box-shadow: 0 0 0 2px $c-green;
@@ -137,8 +136,7 @@
   height: 40px;
   transition: 0.5s;
 
-  &:hover,
-  &:focus {
+  &:hover {
     outline: none;
     border-radius: 10px;
     box-shadow: 0 0 0 2px $c-green;
@@ -165,9 +163,9 @@
     color: $c-white;
     font-size: $fs-xs;
     transition: 0.5s;
+    width: max-content;
 
-    &:hover,
-    &:focus {
+    &:hover {
       outline: none;
       border-radius: 10px;
       box-shadow: 0 0 0 2px $c-green;
@@ -202,11 +200,9 @@
 @media (max-width: 639px) {
   .footer-main {
     flex-direction: column;
-
   }
 
   .about-us {
     flex-direction: column;
-
   }
 }

@@ -32,8 +32,7 @@
   padding-bottom: 20px;
   transition: 0.5s;
 
-  &:hover,
-  &:focus {
+  &:hover {
     outline: none;
     border-radius: 5px;
     box-shadow: 0 0 5px 5px lighten($c-green, 10%);
@@ -84,8 +83,7 @@
     outline-color: $c-green;
     transition: 0.5s;
 
-    &:hover,
-    &:focus {
+    &:hover {
       outline: none;
       border-radius: 5px;
       box-shadow: 0 0 3px 3px lighten($c-green, 10%);
@@ -111,9 +109,10 @@
     padding-left: 30px;
     border: 1px solid #e0e0e0;
     font-size: $fs-l;
+    outline-color: $c-green;
     transition: 0.5s;
 
-    &:focus {
+    &:hover {
       outline: none;
       border-radius: 2px;
       box-shadow: 0 0 3px 3px lighten($c-green, 10%);
